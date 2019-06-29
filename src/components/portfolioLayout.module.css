@@ -82,3 +82,8 @@
 		font-size: 1.7em;
 	}
 }
+@media(max-width: 400px){
+	.navBar{
+		font-size: 1em;
+	}
+}
