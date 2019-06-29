@@ -1,11 +1,9 @@
 import React from "react"
-import Img from "gatsby-image"
-
 import { Link } from "gatsby"
 import Modal from "./Modal"
 import styles from "./portfolioLayout.module.css"
 const { links, hilighted, pageContent, layout,
-contactModal, navBar, contact } = styles
+contactModal, navBar, contact, contactInfo } = styles
 const scrollLock = {
 	overflow: "hidden",
 	position: "fixed",
@@ -41,13 +39,20 @@ class PortfolioLayout extends React.Component {
 						toggleModal={this.toggleModal}
 					>
 						<div className={contactModal}>
-							<p>Email: TimothyLowe247@gmail.com</p>
-							<p>
-								<a href="https://www.linkedin.com/in/timothy-lowe/">Linkdin</a>
-							</p>
-							<p>
-								<a href="https://github.com/Wheaties247">GitHub:</a>
-							</p>
+							<p className={contactInfo}>Email: TimothyLowe247@gmail.com</p>
+							
+								<a
+								
+								href="https://www.linkedin.com/in/timothy-lowe/">
+								<p className={contactInfo} >Linkdin</p>
+								</a>
+							<a 
+							href="https://github.com/Wheaties247">
+								<p
+								className={contactInfo}>
+								GitHub
+								</p></a>
+							
 						</div>
 					</Modal>
 				) : null}

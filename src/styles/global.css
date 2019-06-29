@@ -5,66 +5,14 @@ html {
 
 
 
-.landingPage {
-	margin-top: 20%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-.landingImgDiv {
-	margin-top: -35%;
-	text-align: left;
-	top: 10%;
-	height: 70vh;
-	width: 70vw;
-}
 
-.pageName {
-	border: 1px dotted black;
-	padding: 3%;
-	font-size: 1.3em;
-	padding-left: 30%;
-	font-family: Major Mono Display, monospace;
-}
-.pageName:hover {
-	background: black;
-	color: white;
-}
 
-.aboutMeModal {
-	font-size: 1.5em;
-	width: 100%;
-	line-height: 200%;
-	height: 90%;
-	overflow-y: scroll;
-}
 
-.leavesImg {
-	margin-right: 3%;
-	margin-left: 3%;
-	width: 250px;
-	float: left;
-	position: relative;
-	bottom: 0;
-}
-.slowImg {
-	margin-left: 3%;
-	margin-right: 3%;
-	bottom: 0;
-	width: 250px;
-	float: right;
-}
 
-@media (max-height: 660px) {
-	.landingImgDiv {
-		margin-top: -23%;
-		overflow: scroll;
-	}
-}
 
-@media (max-width: 1056px) {
-	.pageName {
-		font-size: 0.9em;
-	}
-}
+
+
+
+
+
 

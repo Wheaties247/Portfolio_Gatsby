@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import PortfolioLayout from "../components/PortfolioLayout"
 import ContentContainer from "../components/ContentContainer"
 import skillStyles from "../components/skillStyles.module.css"
-const { content, skillPage, skill: singleSkillStyle } = skillStyles
+const { skillPage, skill: singleSkillStyle } = skillStyles
 const Skils = () => (
 	<StaticQuery
 		query={graphql`

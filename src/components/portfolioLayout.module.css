@@ -1,13 +1,12 @@
-
-.hilighted{
+.hilighted {
 	text-decoration: underline;
-	color:white;
+	color: white;
 }
-.links{
+.links {
 	color: white;
 	text-decoration: none;
 }
-.links:visited{
+.links:visited {
 	text-decoration: none;
 }
 .pageContent {
@@ -29,7 +28,9 @@
 	justify-content: space-around;
 	flex-direction: column;
 	align-items: center;
-	height: 90%;
+	height: 85%;
+	font-family: Major Mono Display, monospace;
+	font-size: 0.8em;
 }
 .navBar {
 	background: black;
@@ -46,7 +47,18 @@
 	z-index: 4;
 	font-family: Major Mono Display, monospace;
 }
+.contactInfo {
+	font-family: Major Mono Display, monospace;
+	text-decoration: none;
+	color: black;
+	border-radius: 15px;
 
+	margin: 0%;
+}
+.contactInfo:hover {
+	color: white;
+	background: gray;
+}
 .contact {
 	/*height: 100%;*/
 	background: rgb(246, 246, 246);
@@ -58,10 +70,15 @@
 	padding: 1%;
 	font-family: Major Mono Display, monospace;
 }
-.contact:hover{
+.contact:hover {
 	color: white;
 	background: gray;
 }
 .contact p {
 	display: inline;
+}
+@media (min-width: 750px) {
+	.contactInfo {
+		font-size: 1.7em;
+	}
 }

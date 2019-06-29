@@ -6,7 +6,6 @@ const {container, modalContent, title, closeButton:buttonStyle} = modalStyles
 const Modal = props =>{
 	const {modalName, toggleModal, imageData, children} = props
 	const {closeButton} = imageData
-	console.log(window.scrollY, "window.scrollY")
 	return(
 		<div className ={container}
 		onClick ={toggleModal}>

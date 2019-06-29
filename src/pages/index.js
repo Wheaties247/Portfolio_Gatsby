@@ -5,6 +5,15 @@ import Modal from "../components/Modal"
 
 // import Landing from "../components/Landing"
 import PortfolioLayout from "../components/PortfolioLayout"
+import styles from "../styles/landingStyles.module.css"
+
+const {aboutMeModal,
+leavesImg,
+slowImg,
+aboutString,
+landingPage,
+landingImgDiv,
+pageName} = styles
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -71,27 +80,27 @@ class IndexPage extends React.Component {
                   modalName="About Me"
                   toggleModal={this.toggleModal}
                 >
-                  <div className="aboutMeModal">
-                    <div className="leavesImg">
+                  <div className={aboutMeModal}>
+                    <div className={leavesImg}>
                       <Img fluid={leaves.childImageSharp.fluid} alt="leaves" />
                     </div>
 
                     
-                    <p>{aboutString1}</p>
-                    <div className="slowImg">
+                    <p className={aboutString}>{aboutString1}</p>
+                    <div className={slowImg}>
                       <Img fluid={slow.childImageSharp.fluid} alt="slow" />
                     </div>
-                    <p>{aboutString2}</p>
+                    <p className={aboutString}>{aboutString2}</p>
 
                     
                   </div>
                 </Modal>
               ) : null}
 
-              <div className="landingPage">
-                <div className="landingImgDiv">
+              <div className={landingPage}>
+                <div className={landingImgDiv}>
                   <Img fluid={prospect.childImageSharp.fluid} alt="prospect" />
-                  <div className="pageName"
+                  <div className={pageName}
                    onClick={() => this.toggleModal()}>
                      <p> {landingString}</p><p>{landingString2}</p><p>{landingString3}</p>
                      
