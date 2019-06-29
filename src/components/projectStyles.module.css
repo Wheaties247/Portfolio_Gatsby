@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah|Josefin+Sans");
+.word {
+	display: inline-block;
+	font-family: Gloria Hallelujah;
+	margin: 1%;
+}
+.projectContainer{
+	display: flex;
+	    top: 15%;
+    flex-direction: column;
+    position: absolute;
+
+}
+.projectLinks {
+	text-decoration: none;
+	color: black;
+	border-radius: 15px;
+}
+.projectLinks:hover {
+	color: white;
+	background: gray;
+}
+.url {
+	font-size: 1.4em;
+	font-family: Amatic SC;
+}

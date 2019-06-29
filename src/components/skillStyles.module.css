@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+.content{
+	width: unset;
+	display: flex;
+	flex-wrap: wrap;
+}
+.skillPage {
+	display: flex;
+	overflow: scroll;
+	flex-direction: column;
+	position: absolute;
+    top: 18%;
+    /*height: 70%;*/
+ }
+ .skill{
+ 	display: inline-block;
+ 	margin: 3%;
+ 	/*font-family: Gloria Hallelujah; */
+    /*font-family: Amatic SC;*/
+    font-family: Josefin Sans;
+ }
