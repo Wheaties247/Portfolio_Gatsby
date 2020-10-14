@@ -7,7 +7,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "gatsby": "^2.8.2",
-    "gatsby-cli": "^2.7.6",
+    "gatsby-cli": "^2.12.107",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.1.1",

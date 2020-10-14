@@ -39,7 +39,7 @@ class PortfolioLayout extends React.Component {
 						toggleModal={this.toggleModal}
 					>
 						<div className={contactModal}>
-							<p className={contactInfo}>Email: TimothyLowe247@gmail.com</p>
+							<p className={contactInfo}>Email: LoweaTimothy@gmail.com</p>
 							
 								<a
 								

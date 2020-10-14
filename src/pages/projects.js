@@ -59,6 +59,13 @@ const Projects = () => (
 						}
 					}
 				}
+				bones: file(relativePath: { eq: "hiddenBones.png" }) {
+					childImageSharp {
+						fluid(maxWidth: 1400) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
 			}
 		`}
 		render={data => {
@@ -70,6 +77,7 @@ const Projects = () => (
 				movieClub,
 				chewsy,
 				perspective,
+				bones
 			} = data
 			const reachGoalString =
 				"A simple two player dice game to reach a desired goal before your opponent"
@@ -82,6 +90,7 @@ const Projects = () => (
 				"A recipie catalog for users with general dietary allergens or restricitons "
 			const prespectiveString =
 				"A static site that shows some of the many prespectives that this reality holds"
+			const bonesString = "Battleship game with a spin; search for the hidden bones within a rows and columns selected by the user before reaching the maxium number of misses"
 			const stringSplit = string => {
 				const wordArray = string.split(" ")
 				return wordArray.map((word, i) => {
@@ -129,12 +138,12 @@ const Projects = () => (
 					description: prespectiveString,
 					url: "http://www.perspective.surge.sh",
 				},
-				// {
-				// 	name: "Reach The Goal",
-				// 	image: reachGoal,
-				// 	description: reachGoalString,
-				// 	url: "http://www.ReachGoal.surge.sh"
-				// },
+				{
+					name: "Hidden Bones",  
+					image: bones,
+					description: bonesString,
+					url: "http://www.hiddenBones.surge.sh"
+				},
 			]
 			const projectMap = projectArray => {
 				return projectArray.map((project, i)=>{
